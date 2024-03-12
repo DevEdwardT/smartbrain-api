@@ -111,7 +111,7 @@ app.put("/image", (req, res) => {
     .then((entries) => {
       res.json(entries[0].entries);
     })
-    .catch((err) => res.status(400).json("uanble to get entries"));
+    .catch((err) => res.status(400).json(err));
 });
 
 app.listen(3000, () => {
