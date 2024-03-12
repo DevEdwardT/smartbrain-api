@@ -12,7 +12,7 @@ const db = knex({
     port: 5432,
     user: "smartbrainsql_user",
     password: process.env.DB_PASSWORD,
-    database: "smartbrainsql?ssl=true",
+    database: "smartbrainsql",
     ssl: true,
   },
 });
